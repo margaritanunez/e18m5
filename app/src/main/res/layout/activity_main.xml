@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/enterotxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Ingresa un número entero"
+        android:inputType="number"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enterotv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Valor entero almacenado"
+        app:layout_constraintEnd_toEndOf="@+id/enterotxt"
+        app:layout_constraintStart_toStartOf="@+id/enterotxt"
+        app:layout_constraintTop_toBottomOf="@+id/enterotxt" />
+
+    <EditText
+        android:id="@+id/textotxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Ingresa un texto"
+        android:inputType="text"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterotv" />
+
+    <TextView
+        android:id="@+id/textotv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Texto almacenado"
+        app:layout_constraintEnd_toEndOf="@+id/textotxt"
+        app:layout_constraintStart_toStartOf="@+id/textotxt"
+        app:layout_constraintTop_toBottomOf="@+id/textotxt" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="224dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="44dp"
+        android:text="Switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textotv" />
+
+    <EditText
+        android:id="@+id/decimaltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Ingresa un decimal"
+        android:inputType="number|numberDecimal"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchtv" />
+
+    <TextView
+        android:id="@+id/decimaltv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Valor decimal ingresado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decimaltxt" />
+
+    <Button
+        android:id="@+id/guardarbtn"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="48dp"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decimaltv" />
+
+    <Button
+        android:id="@+id/borrarbtn"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:text="Borrar"
+        app:layout_constraintEnd_toStartOf="@+id/guardarbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decimaltv" />
+
+    <TextView
+        android:id="@+id/switchtv"
+        android:layout_width="91dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <Button
+        android:id="@+id/showbtn"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="24dp"
+        android:text="Mostrar valores"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guardarbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/borrarbtn"
+        app:layout_constraintTop_toBottomOf="@+id/guardarbtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
